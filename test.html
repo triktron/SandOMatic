@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/victor.min.js" charset="utf-8"></script>
+    <script src="js/ArrayBufferBuilder.js" charset="utf-8"></script>
+    <script src="js/Generator.js" charset="utf-8"></script>
+    <script src="js/tinyexpr.js" charset="utf-8"></script>
+    <script src="js/arm.js" charset="utf-8"></script>
+    <script src="js/linearMove.js" charset="utf-8"></script>
+    <script src="js/player.js" charset="utf-8"></script>
+    <script src="js/sand.js" charset="utf-8"></script>
+    <script src="js/patrn.js" charset="utf-8"></script>
+    <script src="js/patrn/talk.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+
+    <style media="screen">
+      canvas {
+    position: absolute;
+    /* display: none; */
+    border-radius: 50%;
+}
+    </style>
+  </head>
+  <body>
+    <input type="text" class="Name" value="">
+    <input type="button" class="Save" value="Save">
+    <input type="button" class="Play" value="Play" onclick="player.Play(patern)">
+    <input type="button" class="Stop" value="Stop" onclick="player.Stop()">
+    <input type="file" id="file-selector" accept=".patr" onchange='openFile(event)'>Load</input>
+
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sand O Matic</title>
+
+  </head>
+  <body>
+
+  </body>
+</html>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sand O Matic</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/grids-responsive-min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/patrn.css">
+
+    <script src="js/libs/victor.min.js" charset="utf-8"></script>
+    <script src="js/libs/ArrayBufferBuilder.js" charset="utf-8"></script>
+    <script src="js/utils/simulator.js" charset="utf-8"></script>
+    <script src="js/linearMove.js" charset="utf-8"></script>
+    <script src="js/patrn.js" charset="utf-8"></script>
+
+    <script src="js/patrn/patrn.js" charset="utf-8"></script>
+</head>
+<body>
+
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu">
+            <a class="pure-menu-heading" href="#">Sand O Matic</a>
+
+            <ul class="pure-menu-list">
+              <li class="pure-menu-item"><a href="index.html" class="pure-menu-link">live</a></li>
+                <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Paterns</a></li>
+
+                <li class="pure-menu-item menu-item-divided">
+                    <a href="settings.html" class="pure-menu-link">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+      <div class="quickview">
+        <div class="name"></div>
+        <img src="img/rose.png" alt="">
+        <hr>
+        <div class="info">
+          <button class="button-success pure-button">Send</button>
+          <button class="button-secondary pure-button" onclick="if (typeof simulator !== 'undefined' && simulator !== null) StopSimulation(); else StartSimulation();">Simulate</button>
+          <button class="button-warning pure-button">Favorite</button>
+        </div>
+      </div>
+      <div class="blur">
+      <div class="pure-g">
+      </div>
+    </div>
+    <div class="blur-overlay"></div>
+  </div>
+</div>
+
+</body>
+</html>
